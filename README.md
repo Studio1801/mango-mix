@@ -19,11 +19,15 @@ assets/source/          bigger source images, for re-cutting or re-exporting
   Nothing is sent anywhere and nothing is charged. The order number is random.
   To make it real: connect `placeBtn` in `js/app.js` (function `renderDrawer`) to a real ordering
   backend (Square, Toast, Clover, or a Google Sheet + Apps Script like our other dashboards).
-- **Prices are placeholders.** Edit `p:` on each item in `FAVS`, `MENU` and `EXTRA` in `js/app.js`.
+- **Prices come from their Uber Eats menu (Nov 2026).** In-store prices are often lower than app prices,
+  so confirm with the owner. Açaí, pandebonos and the hot dog are not on Uber Eats, so those prices are guesses.
+  Edit `p:` on each item in `FAVS` and `MENU` in `js/app.js`.
   Cup builder price is in `cupPrice()`. Sales tax is set to 7.5% (Tampa) in `totals()`.
 - **No outside links.** Directions and Instagram buttons were replaced with "Pick up here" and
   "Start a pickup order", which open the order panel. Add real links back when going live.
-- **Opening hours are not on the site.** We could not find them publicly.
+- **Opening hours are not on the site.** Public sources disagree (Uber Eats: 12:30 to 8 PM daily;
+  Apple Maps: 12 to 8 PM weekdays, 12 to 8:30 PM weekends). Confirm with the owner before adding.
+- **Phone shown on site:** (813) 374-2823 (Armenia Ave), from Apple Maps and Restaurant Guru.
 
 ## Things to confirm with the owner
 
@@ -36,15 +40,21 @@ assets/source/          bigger source images, for re-cutting or re-exporting
 
 ## Photos
 
-- From the Mangomix Instagram. Mango cup, açaí, sandía con mango and chocolate shake are full-size originals.
+- From the Mangomix Instagram. Mango cup, açaí, salpimix (watermelon with green mango) and chocolate shake are full-size originals.
 - Strawberry milkshake came from a 1080px promo graphic and was cut out and AI-upscaled.
-- Fresas con crema and piña loca only exist as small video covers, so they were AI-upscaled
-  (`*-ai-upscaled.jpg`). The founder photo (612px) was also AI-upscaled; replace when the owner sends originals.
+- Piña loca and fresas con crema photos were removed: the only versions we could reach (logged out of
+  Instagram) were blurry Halloween video covers. Get originals from the owner, or log in to Instagram
+  and pull them from the posts, then add them back as stickers. The founder photo (612px) was also AI-upscaled; replace when the owner sends originals.
 - Fresas con crema and piña loca came from Halloween posts. Backgrounds were removed.
 - Stickers have a cream outline baked into the image. To make new ones: remove background, add a
   cream (#FFF4D6) outline about 24px wide, export as .webp around 1100px tall.
 
 ## Facts used on the site
+
+- Menu and prices: Uber Eats store "Mangomix (Tampa)". Fruit salad is their #1 most liked item, Mangobiche #3.
+- "Salpimix" name: from their own promo video. Uber Eats also lists a "Salpicon" ($12.50).
+- Uber Eats lists the second store as "Mangomix (Wesley Chapel)" at 26244 Wesley Chapel Blvd, Lutz.
+  Their Instagram bio says KRATE, 5903 Goldview Pkwy. The site uses the Instagram bio. Confirm with the owner.
 
 - They already sell on DoorDash and Uber Eats (shown on their own promo graphics). Pitch angle: direct pickup orders on their own site, no app commission.
 

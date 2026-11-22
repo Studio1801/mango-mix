@@ -148,6 +148,7 @@
   .addx.na{opacity:.5;cursor:default}
   .pickadd{margin-top:3vh}
   .cartpill{position:fixed;right:20px;bottom:20px;z-index:15;background:var(--selva);color:var(--papel);border:1px solid var(--papel);border-radius:999px;padding:14px 22px;font:inherit;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;display:flex;gap:10px;align-items:center;transform:translateY(140%);transition:transform .5s var(--ease)}
+  .cartpill:not(.on){visibility:hidden}
   .cartpill.on{transform:none}
   .cartpill b{background:var(--aji);color:var(--papel);border-radius:999px;min-width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
   .scrim{position:fixed;inset:0;background:rgba(14,59,34,.55);z-index:24}
@@ -180,11 +181,21 @@
     .badge b{font-size:28px}
     .badge span{font-size:9px}
     .st1{left:-4vw;bottom:4vh}.st2{top:13vh;right:2vw}.st3{right:-3vw;bottom:2vh}.st4{left:-2vw;top:12vh}
-    .fav,.fav.flip{grid-template-columns:1fr;min-height:0;padding:6vh 6vw}
+    .fav,.fav.flip{grid-template-columns:minmax(0,1fr) 38%;min-height:0;padding:28px 6vw;gap:16px;align-items:end}
+    .fav .big{font-size:clamp(40px,11vw,64px)}
+    .fav .txt p{font-size:16px;margin-top:12px}
+    .fav .txt .label{margin-bottom:10px}
+    .addrow{margin-top:16px}
+    .fav.flip .addrow{justify-content:flex-start}
+    .favs{padding-top:12vh}
+    .favs .head{padding-bottom:3vh}
     .fav.flip .txt{order:0;text-align:left}
     .fav.flip .txt p{margin-left:0}
-    .fav img{max-width:260px}
-    .also{grid-template-columns:1fr}
+    .fav img{max-width:100%}
+    .fav.flip img{order:2}
+    .also{grid-template-columns:1fr;padding:8vh 6vw 10vh}
+    .also li b{font-size:22px}
+    .also li span{font-size:15px}
     .also ul{grid-template-columns:1fr}
     .founder{grid-template-columns:1fr}
     .founder .ph{height:70vh}
@@ -193,9 +204,10 @@
     .copa svg text{font-size:20px;letter-spacing:.06em}
     .pick{padding:12vh 6vw}
     .pick .pimg{position:static;width:180px;margin-bottom:4vh}
-    .pick .ans .name{font-size:20vw;max-width:none}
+    .pick .ans .name{font-size:13vw;max-width:none;overflow-wrap:anywhere}
     .spot{grid-template-columns:1fr}
     .spot .pill{justify-self:start}
     .legal .inner{margin-left:0}
+    .toast{bottom:auto;top:16px;z-index:40}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.st,.badge{opacity:1;transform:rotate(var(--r))}}

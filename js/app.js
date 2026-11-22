@@ -1,45 +1,48 @@
-const IMG = {mango:"assets/img/mango-cup.webp",fresas:"assets/img/fresas-con-crema.webp",acai:"assets/img/acai.webp",pina:"assets/img/pina-loca.webp",sandia:"assets/img/sandia-con-mango.webp",fresashake:"assets/img/strawberry-milkshake.webp",shake:"assets/img/chocolate-shake.webp"};
+const IMG = {mango:"assets/img/mango-cup.webp",acai:"assets/img/acai.webp",sandia:"assets/img/sandia-con-mango.webp",fresashake:"assets/img/strawberry-milkshake.webp",shake:"assets/img/chocolate-shake.webp"};
 const T = {
-  en:{skip:"Skip to menu",navMenu:"Menu",navCup:"Build a cup",navVisit:"Visit",heroP:"Colombian fruit bar since 2017. Cut to order, piled high, Tampa Bay.",heroCta:"Find us",favsH:"Los favoritos",favsL:"What everyone posts about",alsoH:"And also",
+  en:{skip:"Skip to menu",navMenu:"Menu",navCup:"Build a cup",navVisit:"Visit",heroP:"Colombian fruit bar since 2017. Cut to order, piled high, Tampa Bay.",heroCta:"Order pickup",favsH:"Los favoritos",favsL:"What everyone posts about",alsoH:"And also",
     founderP:"The Colombian fruit stand, brought to Tampa. Fruit cut in front of you, cups filled until they overflow, the way it is done back home.",founderCap:"The founder, fruit in hand.",
     copaH:"Arma tu copa",copaP:"Chopped fruit at the bottom, sweet cream poured over, grated cheese on top. Build yours, then show it at the counter.",fruitL:"Fruit",topL:"On top",yourCup:"Your cup",copy:"Copy my cup",copied:"Copied. Show it at the counter.",copyFail:"Copy not available here",emptyCup:"Pick at least one fruit.",cupWord:"Fruit salad with",copaRot:"Corte de la copa / Inside the cup",
-    pickH:"¿Qué se te antoja?",pickL:"Get this",visitH:"Ven pa'cá",hours:"Today's hours on Instagram",dir:"Directions",f1:"Dogs welcome on the patio",f2:"Jenga table",f3:"English y español",f4:"Beer and wine",terms:"Terms",privacy:"Privacy",back:"Close",chili:"Salt, lime and chili",
+    pickH:"¿Qué se te antoja?",pickL:"Get this",visitH:"Ven pa'cá",hours:"Today's hours on Instagram",dir:"Directions",f1:"Dogs welcome on the patio",f2:"Jenga table",f3:"English y español",f4:"Beer and wine",callUs:"Call",terms:"Terms",privacy:"Privacy",back:"Close",chili:"Salt, lime and chili",
     startOrder:"Start a pickup order",pickHere:"Pick up here",addCup:"Add my cup to order",yourOrder:"Your order",demoTag:"Demo order, no payment taken",close:"Close",
     add:"Add",added:"Added to your order",inStore:"In store only",orderH:"Your order",emptyCart:"Nothing here yet. Add something from the menu.",browse:"See the menu",
     pickupAt:"Pick up at",when:"When",asap:"ASAP (about 15 min)",in30:"In 30 min",in60:"In 1 hour",you:"Your details",name:"Name",phone:"Phone",
     subtotal:"Subtotal",tax:"Sales tax (7.5%)",total:"Total",payNote:"Pay at the counter when you pick up.",place:"Place order",needInfo:"Add your name and phone so we can call your order.",
     confH:"Order in!",confNum:"Order number",confAt:"Pick it up at",confReady:"Ready around",confDemo:"This is a demo. No order was sent and nothing was charged.",newOrder:"Start a new order",
-    cupItem:"Your fruit salad",armenia:"Armenia Ave, Tampa",krate:"KRATE at The Grove, Wesley Chapel",demoPrices:"Demo prices"},
-  es:{skip:"Ir al menú",navMenu:"Menú",navCup:"Arma tu copa",navVisit:"Visítanos",heroP:"Frutería colombiana desde 2017. Picada al momento, bien servida, en Tampa Bay.",heroCta:"Encuéntranos",favsH:"Los favoritos",favsL:"Lo que todos publican",alsoH:"Y también",
+    cupItem:"Your fruit salad",armenia:"Armenia Ave, Tampa",krate:"KRATE at The Grove, Wesley Chapel",demoPrices:"Uber Eats menu prices"},
+  es:{skip:"Ir al menú",navMenu:"Menú",navCup:"Arma tu copa",navVisit:"Visítanos",heroP:"Frutería colombiana desde 2017. Picada al momento, bien servida, en Tampa Bay.",heroCta:"Pide para recoger",favsH:"Los favoritos",favsL:"Lo que todos publican",alsoH:"Y también",
     founderP:"La frutería colombiana, traída a Tampa. Fruta picada frente a ti y vasos llenos hasta rebosar, como se hace en casa.",founderCap:"El fundador, con la fruta en la mano.",
     copaH:"Arma tu copa",copaP:"Fruta picada abajo, crema dulce por encima y queso rallado arriba. Arma la tuya y muéstrala en el mostrador.",fruitL:"Fruta",topL:"Encima",yourCup:"Tu copa",copy:"Copiar mi copa",copied:"Copiado. Muéstralo en el mostrador.",copyFail:"No se puede copiar aquí",emptyCup:"Escoge al menos una fruta.",cupWord:"Ensalada de frutas con",copaRot:"Corte de la copa / Inside the cup",
-    pickH:"¿Qué se te antoja?",pickL:"Pide esto",visitH:"Ven pa'cá",hours:"Horario de hoy en Instagram",dir:"Cómo llegar",f1:"Perros bienvenidos en el patio",f2:"Mesa de Jenga",f3:"English y español",f4:"Cerveza y vino",terms:"Términos",privacy:"Privacidad",back:"Cerrar",chili:"Sal, limón y ají",
+    pickH:"¿Qué se te antoja?",pickL:"Pide esto",visitH:"Ven pa'cá",hours:"Horario de hoy en Instagram",dir:"Cómo llegar",f1:"Perros bienvenidos en el patio",f2:"Mesa de Jenga",f3:"English y español",f4:"Cerveza y vino",callUs:"Llama",terms:"Términos",privacy:"Privacidad",back:"Cerrar",chili:"Sal, limón y ají",
     startOrder:"Haz un pedido para recoger",pickHere:"Recoger aquí",addCup:"Agregar mi copa al pedido",yourOrder:"Tu pedido",demoTag:"Pedido de prueba, sin cobro",close:"Cerrar",
     add:"Agregar",added:"Agregado a tu pedido",inStore:"Solo en tienda",orderH:"Tu pedido",emptyCart:"Todavía no hay nada. Agrega algo del menú.",browse:"Ver el menú",
     pickupAt:"Recoger en",when:"Cuándo",asap:"Lo antes posible (unos 15 min)",in30:"En 30 min",in60:"En 1 hora",you:"Tus datos",name:"Nombre",phone:"Teléfono",
     subtotal:"Subtotal",tax:"Impuesto (7.5%)",total:"Total",payNote:"Pagas en el mostrador al recoger.",place:"Hacer pedido",needInfo:"Agrega tu nombre y teléfono para llamar tu pedido.",
     confH:"¡Pedido listo!",confNum:"Número de pedido",confAt:"Recógelo en",confReady:"Listo alrededor de las",confDemo:"Esto es una demo. No se envió ningún pedido ni se cobró nada.",newOrder:"Empezar otro pedido",
-    cupItem:"Tu ensalada de frutas",armenia:"Armenia Ave, Tampa",krate:"KRATE at The Grove, Wesley Chapel",demoPrices:"Precios de prueba"}
+    cupItem:"Tu ensalada de frutas",armenia:"Armenia Ave, Tampa",krate:"KRATE at The Grove, Wesley Chapel",demoPrices:"Precios del menú de Uber Eats"}
 };
 const FAVS = [
-  {id:"mangocup",p:9,img:"mango",r:"-5deg",en:["Mango cup","A whole cup of mango, cut into long ribbons. Nothing added, nothing needed.","Fresh fruit"],es:["Vaso de mango","Un vaso entero de mango cortado en tiras largas. Nada más, no hace falta.","Fruta fresca"]},
-  {id:"acai",p:12,img:"acai",r:"5deg",en:["Açaí","Thick açaí with granola, banana, mango and strawberry on top.","Cold"],es:["Açaí","Açaí espeso con granola, banano, mango y fresa encima.","Frío"]},
-  {id:"sandia",p:9,img:"sandia",r:"-4deg",en:["Sandía con mango","Icy watermelon with fruit inside, crowned with ribbons of green mango.","Refreshing"],es:["Sandía con mango","Sandía helada con fruta adentro, coronada con tiras de mango verde.","Refrescante"]},
-  {id:"choco",p:9,img:"shake",r:"6deg",en:["Chocolate shake","Thick chocolate shake, whipped cream, cocoa and a waffle on top.","Sweet"],es:["Batido de chocolate","Batido espeso de chocolate, crema batida, cacao y un waffle encima.","Dulce"]},
-  {id:"fresashake",p:9,img:"fresashake",r:"-5deg",en:["Strawberry milkshake","Strawberry shake swirled with strawberry syrup, piled with whipped cream and a chocolate on top.","Sweet"],es:["Malteada de fresa","Batido de fresa con sirope de fresa, mucha crema batida y un chocolate encima.","Dulce"]}
+  {id:"biche",p:10.99,img:"mango",r:"-5deg",en:["Mangobiche","Fresh mango cut into long strips. Sweet, or sour with salt, lime and chili: you pick the toppings.","#3 most liked"],es:["Mangobiche","Mango fresco en tiras largas. Dulce, o ácido con sal, limón y ají: tú escoges los toppings.","Top 3 más pedidos"]},
+  {id:"acai",p:12.99,img:"acai",r:"5deg",en:["Açaí","Thick açaí with granola, banana, mango and strawberry on top.","Cold"],es:["Açaí","Açaí espeso con granola, banano, mango y fresa encima.","Frío"]},
+  {id:"salpimix",p:12.50,img:"sandia",r:"-4deg",en:["Salpimix","Icy watermelon with chopped fruit inside, crowned with ribbons of green mango.","Refreshing"],es:["Salpimix","Sandía helada con fruta picada adentro, coronada con tiras de mango verde.","Refrescante"]},
+  {id:"choco",p:10.99,img:"shake",r:"6deg",en:["Chocolate milkshake","Thick chocolate shake, whipped cream, cocoa and a waffle on top.","Sweet"],es:["Malteada de chocolate","Malteada espesa de chocolate, crema batida, cacao y un waffle encima.","Dulce"]},
+  {id:"fresashake",p:10.99,img:"fresashake",r:"-5deg",en:["Strawberry milkshake","Strawberry shake swirled with strawberry syrup, piled with whipped cream and a chocolate on top.","Sweet"],es:["Malteada de fresa","Malteada de fresa con sirope de fresa, mucha crema batida y un chocolate encima.","Dulce"]}
 ];
-const EXTRA = [
-  {id:"fresas",p:10,en:["Fresas con crema"],es:["Fresas con crema"]},
-  {id:"pina",p:18,en:["Piña loca"],es:["Piña loca"]}
-];
+const EXTRA = [];
 const MENU = [
-  {id:"biche",p:7,chili:1,en:["Mangobiche","Green mango, salt, lime, chili."],es:["Mangobiche","Mango verde, sal, limón, ají."]},
-  {id:"salad",p:9,en:["Fruit salad","Chopped fruit, sweet cream, grated cheese."],es:["Ensalada de frutas","Fruta picada, crema dulce, queso rallado."]},
-  {id:"obleas",p:6,en:["Obleas","Thin wafers with arequipe and toppings."],es:["Obleas","Obleas finas con arequipe y toppings."]},
-  {id:"perro",p:8,en:["Colombian hot dog","Loaded, with crushed potato chips on top."],es:["Perro caliente","Bien cargado, con papita triturada."]},
-  {id:"waffles",p:9,en:["Waffles","Fresh off the iron, topped with fruit."],es:["Waffles","Recién hechos, con fruta encima."]},
-  {id:"batidos",p:8,en:["Shakes","Blended with real fruit and milk."],es:["Batidos","Con fruta de verdad y leche."]},
-  {id:"pandebono",p:2.5,en:["Pandebonos","Colombian cheese bread, warm."],es:["Pandebonos","Pan de queso colombiano, calientito."]},
+  {id:"salad",p:13.99,en:["Fruit salad","Our #1 most liked. Chopped fruit, cream, cheese and the toppings you choose."],es:["Ensalada de frutas","La más pedida. Fruta picada, crema, queso y los toppings que escojas."]},
+  {id:"wafflono",p:13.99,en:["Wafflono with ice cream","A waffle made with pandebono dough brought from Colombia, with ice cream, fruit and toppings."],es:["Wafflono con helado","Waffle hecho con masa de pandebono traída de Colombia, con helado, fruta y toppings."]},
+  {id:"fresas",p:12.75,en:["Strawberries and cream","Fresh strawberries with sweet cream. Choose your sauces and toppings."],es:["Fresas con crema","Fresas frescas con crema dulce. Escoge tus salsas y toppings."]},
+  {id:"cholado",p:13.99,en:["Cholado","Shaved ice with fruit, syrups and condensed milk. A Cali classic."],es:["Cholado","Hielo raspado con fruta, siropes y leche condensada. Un clásico caleño."]},
+  {id:"oblea",p:8.99,en:["Oblea","Colombian wafer cookie. Build it with your favourite toppings."],es:["Oblea","Galleta colombiana. Ármala con tus toppings favoritos."]},
+  {id:"maracuyada",p:10.99,en:["Maracuyada","100% passion fruit with condensed milk."],es:["Maracuyada","100% maracuyá con leche condensada."]},
+  {id:"mangomixdrink",p:12.99,en:["Mangomix","The house drink: a cold blend of mango."],es:["Mangomix","La bebida de la casa: un frappé de mango."]},
+  {id:"smoothie",p:7.79,en:["Smoothies","Fresh fruit and yogurt."],es:["Smoothies","Fruta fresca y yogur."]},
+  {id:"cheesecake",p:8.99,en:["Passion fruit cheesecake","Tropical passion fruit on creamy cheesecake."],es:["Cheesecake de maracuyá","Maracuyá tropical sobre cheesecake cremoso."]},
+  {id:"cafe",p:6.49,en:["Colombian coffee","Café Quindío, from Colombia's coffee region."],es:["Café colombiano","Café Quindío, del eje cafetero."]},
+  {id:"milo",p:7.75,en:["Milo","Cold chocolate malt drink, the Colombian way."],es:["Milo","Milo frío, como en Colombia."]},
+  {id:"pandebono",p:2.50,demo:1,en:["Pandebonos","Colombian cheese bread, warm."],es:["Pandebonos","Pan de queso colombiano, calientito."]},
+  {id:"perro",p:8.99,demo:1,en:["Colombian hot dog","Loaded, with crushed potato chips on top."],es:["Perro caliente","Bien cargado, con papita triturada."]},
   {id:"beer",p:0,en:["Beer and wine","Something cold with your plate."],es:["Cerveza y vino","Algo frío para acompañar."]}
 ];
 const FRUITS = [
@@ -54,17 +57,17 @@ const TOPS = [
   {id:"helado",c:"#F7E6EA",dome:1,en:"Ice cream",es:"Helado",on:0}
 ];
 const MOODS = [
-  {id:"sour",item:"biche",img:null,en:["Something sharp","Mangobiche","Sour, salty and a little hot. Green mango with salt, lime and chili."],es:["Algo ácido","Mangobiche","Ácido, salado y un poco picante. Mango verde con sal, limón y ají."]},
-  {id:"sweet",item:"fresas",img:"fresas",en:["Something sweet","Fresas con crema","Strawberries, sweet cream, ice cream, chocolate. Say no more."],es:["Algo dulce","Fresas con crema","Fresas, crema dulce, helado y chocolate. No hay más que decir."]},
-  {id:"cold",item:"sandia",img:"sandia",en:["Something icy","Sandía con mango","Icy watermelon under a crown of green mango. Made for Florida afternoons."],es:["Algo helado","Sandía con mango","Sandía helada bajo una corona de mango verde. Hecho para las tardes de Florida."]},
+  {id:"sour",item:"biche",img:"mango",en:["Something sharp","Mangobiche","Mango strips gone sour: salt, lime and chili. The one regulars come back for."],es:["Algo ácido","Mangobiche","Tiras de mango en versión ácida: sal, limón y ají. El que siempre vuelven a pedir."]},
+  {id:"classic",item:"salad",img:null,en:["The classic","Fruit salad","Our #1 most liked. Start where every Colombian starts."],es:["El clásico","Ensalada de frutas","La más pedida. Empieza como empieza todo colombiano."]},
+  {id:"cold",item:"salpimix",img:"sandia",en:["Something icy","Salpimix","Icy watermelon under a crown of green mango. Made for Florida afternoons."],es:["Algo helado","Salpimix","Sandía helada bajo una corona de mango verde. Hecho para las tardes de Florida."]},
   {id:"bowl",item:"acai",img:"acai",en:["Something filling","Açaí","Thick açaí, granola and fresh fruit. Breakfast, lunch or both."],es:["Algo que llene","Açaí","Açaí espeso, granola y fruta fresca. Desayuno, almuerzo o los dos."]},
-  {id:"show",item:"pina",img:"pina",en:["Something to post","Piña loca","A whole pineapple, filled to the top. Your phone eats first."],es:["Algo para publicar","Piña loca","Una piña entera, llena hasta arriba. Primero come el celular."]},
-  {id:"fruit",item:"mangocup",img:"mango",en:["Just fruit","Mango cup","A full cup of fresh mango ribbons. Simple and perfect."],es:["Solo fruta","Vaso de mango","Un vaso lleno de tiras de mango fresco. Simple y perfecto."]},
-  {id:"hungry",item:"choco",img:"shake",en:["Chocolate fix","Chocolate shake","Thick, cold, topped with whipped cream and a waffle. Dessert you drink."],es:["Antojo de chocolate","Batido de chocolate","Espeso, frío, con crema batida y un waffle encima. Postre para tomar."]}
+  {id:"sweet",item:"fresashake",img:"fresashake",en:["Something sweet","Strawberry milkshake","Strawberry, whipped cream and a chocolate on top. Dessert you drink."],es:["Algo dulce","Malteada de fresa","Fresa, crema batida y un chocolate encima. Postre para tomar."]},
+  {id:"choc",item:"choco",img:"shake",en:["Chocolate fix","Chocolate milkshake","Thick, cold, topped with whipped cream and a waffle."],es:["Antojo de chocolate","Malteada de chocolate","Espesa, fría, con crema batida y un waffle encima."]},
+  {id:"hungry",item:"wafflono",img:null,en:["Real hunger","Wafflono","A waffle made from pandebono dough, with ice cream. Only in Colombia, and here."],es:["Mucha hambre","Wafflono","Waffle de masa de pandebono con helado. Solo en Colombia, y aquí."]}
 ];
-const TAPE_WORDS = ["Desde 2017","Mangobiche","Fresas con crema","Açaí","Piña loca","Sandía con mango","Obleas","Pandebonos","Waffles","Batidos","Perro caliente"];
+const TAPE_WORDS = ["Desde 2017","Ensalada de frutas","Mangobiche","Wafflono","Salpimix","Cholado","Fresas con crema","Açaí","Maracuyada","Obleas","Pandebonos"];
 
-let lang="en", mood="sweet", loaded=false;
+let lang="en", mood="sour", loaded=false;
 try{ lang = localStorage.getItem("mmx-lang") || "en"; }catch(e){}
 const $ = id => document.getElementById(id);
 
@@ -100,11 +103,11 @@ function renderCup(){
     + (fr.length?"":`<text x="210" y="340" text-anchor="middle">${T[lang].emptyCup.toUpperCase()}</text>`);
   const parts=[...fr.map(f=>f[lang].toLowerCase()),...TOPS.filter(t=>t.on).map(t=>t[lang].toLowerCase())];
   $("orderText").textContent = fr.length?`${T[lang].cupWord} ${list(parts)}.`:T[lang].emptyCup;
-  $("cupPrice").textContent = `${money(cupPrice())} / ${T[lang].demoPrices}`;
+  $("cupPrice").textContent = money(cupPrice());
 }
 function list(a){const and=lang==="es"?" y ":" and ";return a.length<2?a.join(""):a.slice(0,-1).join(", ")+and+a[a.length-1];}
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),2200);}
-function cupPrice(){ const extras=TOPS.filter(t=>t.on).length; return 9+Math.max(0,extras-2)*1; }
+function cupPrice(){ const extras=TOPS.filter(t=>t.on).length; return 13.99+Math.max(0,extras-2)*1; }
 $("addCup").onclick=()=>{ if(!FRUITS.some(f=>f.on)) return toast(T[lang].emptyCup); addLine({id:"cup"+Date.now(),cup:true,p:cupPrice(),desc:$("orderText").textContent}); };
 
 /* picker */
