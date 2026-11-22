@@ -1,4 +1,4 @@
-const IMG = {mango:"assets/img/mango-cup.webp",acai:"assets/img/acai.webp",sandia:"assets/img/sandia-con-mango.webp",fresashake:"assets/img/strawberry-milkshake.webp",shake:"assets/img/chocolate-shake.webp"};
+const IMG = {mango:"assets/img/mango-cup.webp",acai:"assets/img/acai.webp",salad:"assets/img/fruit-salad.webp",waffle:"assets/img/wafflono.webp",fresas:"assets/img/fresas-con-crema.webp",pina:"assets/img/pina-loca.webp",sandia:"assets/img/sandia-con-mango.webp",fresashake:"assets/img/strawberry-milkshake.webp",shake:"assets/img/chocolate-shake.webp"};
 const T = {
   en:{skip:"Skip to menu",navMenu:"Menu",navCup:"Build a cup",navVisit:"Visit",heroP:"Colombian fruit bar since 2017. Cut to order, piled high, Tampa Bay.",heroCta:"Order pickup",favsH:"Los favoritos",favsL:"What everyone posts about",alsoH:"And also",
     founderP:"The Colombian fruit stand, brought to Tampa. Fruit cut in front of you, cups filled until they overflow, the way it is done back home.",founderCap:"The founder, fruit in hand.",
@@ -22,17 +22,18 @@ const T = {
     cupItem:"Tu ensalada de frutas",armenia:"Armenia Ave, Tampa",krate:"KRATE at The Grove, Wesley Chapel",demoPrices:"Precios del menú de Uber Eats"}
 };
 const FAVS = [
-  {id:"biche",p:10.99,img:"mango",r:"-5deg",en:["Mangobiche","Fresh mango cut into long strips. Sweet, or sour with salt, lime and chili: you pick the toppings.","#3 most liked"],es:["Mangobiche","Mango fresco en tiras largas. Dulce, o ácido con sal, limón y ají: tú escoges los toppings.","Top 3 más pedidos"]},
-  {id:"acai",p:12.99,img:"acai",r:"5deg",en:["Açaí","Thick açaí with granola, banana, mango and strawberry on top.","Cold"],es:["Açaí","Açaí espeso con granola, banano, mango y fresa encima.","Frío"]},
-  {id:"salpimix",p:12.50,img:"sandia",r:"-4deg",en:["Salpimix","Icy watermelon with chopped fruit inside, crowned with ribbons of green mango.","Refreshing"],es:["Salpimix","Sandía helada con fruta picada adentro, coronada con tiras de mango verde.","Refrescante"]},
-  {id:"choco",p:10.99,img:"shake",r:"6deg",en:["Chocolate milkshake","Thick chocolate shake, whipped cream, cocoa and a waffle on top.","Sweet"],es:["Malteada de chocolate","Malteada espesa de chocolate, crema batida, cacao y un waffle encima.","Dulce"]},
-  {id:"fresashake",p:10.99,img:"fresashake",r:"-5deg",en:["Strawberry milkshake","Strawberry shake swirled with strawberry syrup, piled with whipped cream and a chocolate on top.","Sweet"],es:["Malteada de fresa","Malteada de fresa con sirope de fresa, mucha crema batida y un chocolate encima.","Dulce"]}
+  {id:"salad",p:13.99,img:"salad",r:"-4deg",en:["Fruit salad","Strawberry, banana, mango, kiwi, coconut and passion fruit, layered over fruit purée. Tell us your fruits and toppings.","#1 most liked"],es:["Ensalada de frutas","Fresa, banano, mango, kiwi, coco y maracuyá en capas sobre puré de fruta. Dinos tus frutas y toppings.","La más pedida"]},
+  {id:"biche",p:10.99,img:"mango",r:"5deg",en:["Mangobiche","Fresh mango cut into long strips. Sweet, or sour with salt, lime and chili: you pick the toppings.","#3 most liked"],es:["Mangobiche","Mango fresco en tiras largas. Dulce, o ácido con sal, limón y ají: tú escoges los toppings.","Top 3 más pedidos"]},
+  {id:"wafflono",p:13.99,img:"waffle",r:"-3deg",en:["Wafflono","A waffle made with pandebono dough brought from Colombia, topped with ice cream, fruit and chocolate.","#2 most liked"],es:["Wafflono","Waffle hecho con masa de pandebono traída de Colombia, con helado, fruta y chocolate.","Top 2 más pedidos"]},
+  {id:"fresas",p:12.75,img:"fresas",r:"5deg",en:["Fresas con crema","Fresh strawberries layered with sweet cream, finished with ice cream and chocolate.","Sweet"],es:["Fresas con crema","Fresas frescas en capas con crema dulce, con helado y chocolate encima.","Dulce"]},
+  {id:"pina",p:15.99,demo:1,img:"pina",r:"-5deg",en:["Piña loca","A whole pineapple, hollowed out and filled with fruit, banana, ice cream and coconut.","Made to share"],es:["Piña loca","Una piña entera, ahuecada y rellena de fruta, banano, helado y coco.","Para compartir"]},
+  {id:"acai",p:12.99,demo:1,img:"acai",r:"4deg",en:["Açaí","Thick açaí with granola, banana, mango and strawberry on top.","Cold"],es:["Açaí","Açaí espeso con granola, banano, mango y fresa encima.","Frío"]}
 ];
 const EXTRA = [];
 const MENU = [
-  {id:"salad",p:13.99,en:["Fruit salad","Our #1 most liked. Chopped fruit, cream, cheese and the toppings you choose."],es:["Ensalada de frutas","La más pedida. Fruta picada, crema, queso y los toppings que escojas."]},
-  {id:"wafflono",p:13.99,en:["Wafflono with ice cream","A waffle made with pandebono dough brought from Colombia, with ice cream, fruit and toppings."],es:["Wafflono con helado","Waffle hecho con masa de pandebono traída de Colombia, con helado, fruta y toppings."]},
-  {id:"fresas",p:12.75,en:["Strawberries and cream","Fresh strawberries with sweet cream. Choose your sauces and toppings."],es:["Fresas con crema","Fresas frescas con crema dulce. Escoge tus salsas y toppings."]},
+  {id:"salpimix",p:12.50,en:["Salpimix","Icy watermelon with chopped fruit, crowned with ribbons of green mango."],es:["Salpimix","Sandía helada con fruta picada, coronada con tiras de mango verde."]},
+  {id:"fresashake",p:10.99,en:["Strawberry milkshake","Strawberry syrup swirl, whipped cream and a chocolate on top."],es:["Malteada de fresa","Sirope de fresa, crema batida y un chocolate encima."]},
+  {id:"choco",p:10.99,en:["Chocolate milkshake","Whipped cream, cocoa and a waffle on top."],es:["Malteada de chocolate","Crema batida, cacao y un waffle encima."]},
   {id:"cholado",p:13.99,en:["Cholado","Shaved ice with fruit, syrups and condensed milk. A Cali classic."],es:["Cholado","Hielo raspado con fruta, siropes y leche condensada. Un clásico caleño."]},
   {id:"oblea",p:8.99,en:["Oblea","Colombian wafer cookie. Build it with your favourite toppings."],es:["Oblea","Galleta colombiana. Ármala con tus toppings favoritos."]},
   {id:"maracuyada",p:10.99,en:["Maracuyada","100% passion fruit with condensed milk."],es:["Maracuyada","100% maracuyá con leche condensada."]},
@@ -57,13 +58,14 @@ const TOPS = [
   {id:"helado",c:"#F7E6EA",dome:1,en:"Ice cream",es:"Helado",on:0}
 ];
 const MOODS = [
+  {id:"show",item:"pina",img:"pina",en:["Something to post","Piña loca","A whole pineapple, filled to the top. Your phone eats first."],es:["Algo para publicar","Piña loca","Una piña entera, llena hasta arriba. Primero come el celular."]},
   {id:"sour",item:"biche",img:"mango",en:["Something sharp","Mangobiche","Mango strips gone sour: salt, lime and chili. The one regulars come back for."],es:["Algo ácido","Mangobiche","Tiras de mango en versión ácida: sal, limón y ají. El que siempre vuelven a pedir."]},
-  {id:"classic",item:"salad",img:null,en:["The classic","Fruit salad","Our #1 most liked. Start where every Colombian starts."],es:["El clásico","Ensalada de frutas","La más pedida. Empieza como empieza todo colombiano."]},
+  {id:"classic",item:"salad",img:"salad",en:["The classic","Fruit salad","Our #1 most liked. Start where every Colombian starts."],es:["El clásico","Ensalada de frutas","La más pedida. Empieza como empieza todo colombiano."]},
   {id:"cold",item:"salpimix",img:"sandia",en:["Something icy","Salpimix","Icy watermelon under a crown of green mango. Made for Florida afternoons."],es:["Algo helado","Salpimix","Sandía helada bajo una corona de mango verde. Hecho para las tardes de Florida."]},
   {id:"bowl",item:"acai",img:"acai",en:["Something filling","Açaí","Thick açaí, granola and fresh fruit. Breakfast, lunch or both."],es:["Algo que llene","Açaí","Açaí espeso, granola y fruta fresca. Desayuno, almuerzo o los dos."]},
   {id:"sweet",item:"fresashake",img:"fresashake",en:["Something sweet","Strawberry milkshake","Strawberry, whipped cream and a chocolate on top. Dessert you drink."],es:["Algo dulce","Malteada de fresa","Fresa, crema batida y un chocolate encima. Postre para tomar."]},
   {id:"choc",item:"choco",img:"shake",en:["Chocolate fix","Chocolate milkshake","Thick, cold, topped with whipped cream and a waffle."],es:["Antojo de chocolate","Malteada de chocolate","Espesa, fría, con crema batida y un waffle encima."]},
-  {id:"hungry",item:"wafflono",img:null,en:["Real hunger","Wafflono","A waffle made from pandebono dough, with ice cream. Only in Colombia, and here."],es:["Mucha hambre","Wafflono","Waffle de masa de pandebono con helado. Solo en Colombia, y aquí."]}
+  {id:"hungry",item:"wafflono",img:"waffle",en:["Real hunger","Wafflono","A waffle made from pandebono dough, with ice cream. Only in Colombia, and here."],es:["Mucha hambre","Wafflono","Waffle de masa de pandebono con helado. Solo en Colombia, y aquí."]}
 ];
 const TAPE_WORDS = ["Desde 2017","Ensalada de frutas","Mangobiche","Wafflono","Salpimix","Cholado","Fresas con crema","Açaí","Maracuyada","Obleas","Pandebonos"];
 

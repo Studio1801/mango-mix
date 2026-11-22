@@ -42,9 +42,10 @@ assets/source/          bigger source images, for re-cutting or re-exporting
 
 - From the Mangomix Instagram. Mango cup, açaí, salpimix (watermelon with green mango) and chocolate shake are full-size originals.
 - Strawberry milkshake came from a 1080px promo graphic and was cut out and AI-upscaled.
-- Piña loca and fresas con crema photos were removed: the only versions we could reach (logged out of
-  Instagram) were blurry Halloween video covers. Get originals from the owner, or log in to Instagram
-  and pull them from the posts, then add them back as stickers. The founder photo (612px) was also AI-upscaled; replace when the owner sends originals.
+- Fruit salad (1440px) is a full-size original from Instagram.
+- Piña loca and wafflono are 720 to 750px Instagram originals (2022-23 posts), AI-upscaled for sharpness.
+- Fresas con crema comes from a 720px frame of their Oct 2026 video post, AI-upscaled.
+- Piña loca and açaí are not on Uber Eats, so their prices ($15.99, $12.99) are guesses.
 - Fresas con crema and piña loca came from Halloween posts. Backgrounds were removed.
 - Stickers have a cream outline baked into the image. To make new ones: remove background, add a
   cream (#FFF4D6) outline about 24px wide, export as .webp around 1100px tall.
