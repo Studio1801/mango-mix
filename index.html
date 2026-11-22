@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mangomix | Colombian fruit bar, Tampa</title>
+<meta name="description" content="Mangomix: Colombian fruit bar in Tampa Bay. Mango cups, fresas con crema, acai, piña loca, mangobiche, obleas, waffles, hot dogs and pandebonos. N Armenia Ave, Tampa and KRATE at The Grove, Wesley Chapel.">
+<meta name="theme-color" content="#FFB21E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mangomix | Colombian fruit bar, Tampa">
+<meta property="og:description" content="Fruit cut to order, the Colombian way. Two spots in Tampa Bay.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFB21E'/%3E%3Cellipse cx='32' cy='34' rx='18' ry='22' fill='%230E3B22'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Leckerli+One&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Restaurant","name":"Mangomix","servesCuisine":["Colombian","Fruit bar","Desserts"],"address":{"@type":"PostalAddress","streetAddress":"6804 N Armenia Ave","addressLocality":"Tampa","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.instagram.com/mangomix_/"]},
+{"@type":"Restaurant","name":"Mangomix at KRATE","servesCuisine":["Colombian","Fruit bar","Desserts"],"address":{"@type":"PostalAddress","streetAddress":"5903 Goldview Pkwy","addressLocality":"Wesley Chapel","addressRegion":"FL","addressCountry":"US"},"sameAs":["https://www.instagram.com/mangomix_/"]}
+]}
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip pill" href="#favs" data-i18n="skip">Skip to menu</a>
+
+<nav aria-label="Main">
+  <a class="logo script" href="#">Mangomix</a>
+  <div class="links">
+    <a class="label" href="#favs" data-i18n="navMenu">Menu</a>
+    <a class="label" href="#copa" data-i18n="navCup">Build a cup</a>
+    <a class="label" href="#visit" data-i18n="navVisit">Visit</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</nav>
+
+<!-- 1 hero -->
+<header class="hero mango">
+  <img class="st st4" src="assets/img/pina-loca.webp" alt="Piña loca: a hollowed pineapple filled with fruit and ice cream">
+  <img class="st st2" src="assets/img/fresas-con-crema.webp" alt="Strawberries and cream cup with ice cream and chocolate">
+  <img class="st st1" src="assets/img/mango-cup.webp" alt="Cup piled with long ribbons of fresh mango">
+  <img class="st st3" src="assets/img/chocolate-shake.webp" alt="Chocolate shake with whipped cream, cocoa and a waffle on top">
+  <div class="badge" role="img" aria-label="Top 3 2026 award winner, Tampa"><b>TOP 3</b><span>Tampa<br>2026</span></div>
+  <h1 class="poster" aria-label="Mangomix"><span>Mango</span><span>mix</span></h1>
+  <div class="tag">
+    <p data-i18n="heroP">Colombian fruit bar since 2017. Cut to order, piled high, Tampa Bay.</p>
+    <button class="pill" type="button" data-open="any" data-i18n="heroCta">Order pickup</button>
+  </div>
+</header>
+
+<div class="tapewrap" aria-hidden="true"><div class="tape"><div id="tape"></div></div></div>
+
+<main>
+<!-- 3 favourites -->
+<section class="favs selva" id="favs" aria-labelledby="favsH">
+  <div class="head">
+    <h2 class="poster big" id="favsH" data-i18n="favsH">Los favoritos</h2>
+    <span class="label" data-i18n="favsL">What everyone posts about</span>
+  </div>
+  <div id="favList"></div>
+  <div class="also">
+    <h3 data-i18n="alsoH">And also</h3>
+    <ul id="items" aria-busy="true" aria-live="polite"></ul>
+  </div>
+</section>
+
+<!-- 4 founder -->
+<section class="founder mango" aria-labelledby="founderH">
+  <div class="ph"><img src="assets/img/founder.webp" alt="The Mangomix founder smiling at a fruit stand, holding a fruit"></div>
+  <div class="txt">
+    <h2 class="poster" id="founderH">¡Mira<br>ve!</h2>
+    <p data-i18n="founderP">The Colombian fruit stand, brought to Tampa. Fruit cut in front of you, cups filled until they overflow, the way it is done back home.</p>
+    <p class="cap" data-i18n="founderCap">The founder, fruit in hand.</p>
+  </div>
+</section>
+
+<!-- 5 build your cup -->
+<section class="copa selva" id="copa" aria-labelledby="copaH">
+  <div>
+    <h2 class="poster big" id="copaH" data-i18n="copaH">Arma tu copa</h2>
+    <p class="intro" data-i18n="copaP">Chopped fruit at the bottom, sweet cream poured over, grated cheese on top. Build yours, then show it at the counter.</p>
+    <h3 class="label" data-i18n="fruitL">Fruit</h3>
+    <div class="chips" id="fruitChips" role="group" aria-label="Fruit"></div>
+    <h3 class="label" data-i18n="topL">On top</h3>
+    <div class="chips" id="topChips" role="group" aria-label="Toppings"></div>
+    <div class="order">
+      <span class="label" data-i18n="yourCup">Your cup</span>
+      <p id="orderText"></p>
+      <button class="pill" type="button" id="addCup" data-i18n="addCup">Add my cup to order</button> <span class="label price" id="cupPrice"></span>
+    </div>
+  </div>
+  <svg viewBox="0 0 640 620" role="img" aria-labelledby="cupTitle">
+    <title id="cupTitle">Side view of your cup, layer by layer</title>
+    <defs><clipPath id="cupClip"><path d="M60 100 L360 100 L320 580 L100 580Z"/></clipPath></defs>
+    <g id="dome"></g>
+    <g clip-path="url(#cupClip)" id="cupLayers"></g>
+    <path d="M60 100 L360 100 L320 580 L100 580Z" fill="none" stroke="#FFF4D6" stroke-width="1"/>
+    <g id="cupLabels"></g>
+  </svg>
+  <div class="rotr label" data-i18n="copaRot">Corte de la copa / Inside the cup</div>
+</section>
+
+<!-- 6 picker -->
+<section class="pick mango" aria-labelledby="pickH">
+  <img class="pimg" id="pickImg" alt="">
+  <h2 class="poster" id="pickH" data-i18n="pickH">¿Qué se te antoja?</h2>
+  <div class="moods chips" id="moods" role="group" aria-label="Mood"></div>
+  <div aria-live="polite">
+    <span class="label" data-i18n="pickL">Get this</span>
+    <div class="ans"><div class="name poster" id="pickName"></div></div>
+    <p class="why" id="pickWhy"></p>
+    <div class="pickadd"><button class="pill" type="button" id="pickAdd"></button></div>
+  </div>
+</section>
+
+<!-- 7 visit -->
+<section class="visit selva" id="visit" aria-labelledby="visitH">
+  <div class="head">
+    <h2 class="poster big" id="visitH" data-i18n="visitH">Ven pa'cá</h2>
+    <button class="pill" type="button" data-open="any" data-i18n="startOrder">Start a pickup order</button>
+  </div>
+  <div class="spot">
+    <span class="n big">01</span>
+    <div><h3>6804 N Armenia Ave</h3><p>Tampa, FL</p></div>
+    <button class="pill" type="button" data-open="armenia" data-i18n="pickHere">Pick up here</button>
+  </div>
+  <div class="spot">
+    <span class="n big">02</span>
+    <div><h3>KRATE at The Grove, 5903 Goldview Pkwy</h3><p>Wesley Chapel, FL</p></div>
+    <button class="pill" type="button" data-open="krate" data-i18n="pickHere">Pick up here</button>
+  </div>
+  <div class="facts label">
+    <span data-i18n="f1">Dogs welcome on the patio</span>
+    <span data-i18n="f2">Jenga table</span>
+    <span data-i18n="f3">English y español</span>
+    <span data-i18n="f4">Beer and wine</span>
+  </div>
+</section>
+</main>
+
+<footer class="mango">
+  <div>
+    <div class="mark script">Mangomix</div>
+    <p class="label" style="margin-top:14px">@mangomix_ / Est. 2017</p>
+  </div>
+  <div class="links label">
+    <a href="#terms" data-i18n="terms">Terms</a>
+    <a href="#privacy" data-i18n="privacy">Privacy</a>
+  </div>
+</footer>
+
+<section class="legal" id="terms" aria-label="Terms of service">
+  <a class="pill close" href="#" data-i18n="back">Close</a>
+  <div class="inner">
+    <h2 class="poster">Terms</h2>
+    <p>Last updated November 2026. By using this website you agree to these terms.</p>
+    <h3>The website</h3>
+    <p>This site shows information about Mangomix, our menu and our locations. Menu items, prices and hours can change without notice. In-store pricing and availability are final. Online orders are for pickup and are paid at the counter. An order is confirmed once you receive an order number.</p>
+    <h3>Allergens</h3>
+    <p>Our kitchen handles dairy, gluten, nuts, eggs and other common allergens. Please tell our team about any allergy before you order.</p>
+    <h3>Content</h3>
+    <p>Photos, text and the Mangomix name on this site belong to Mangomix and may not be reused without permission.</p>
+    <h3>Liability</h3>
+    <p>This site is provided as is. We do our best to keep it accurate but cannot guarantee that every detail is current.</p>
+    <h3>Contact</h3>
+    <p>Questions about these terms: message us on Instagram at @mangomix_.</p>
+  </div>
+</section>
+
+<section class="legal" id="privacy" aria-label="Privacy policy">
+  <a class="pill close" href="#" data-i18n="back">Close</a>
+  <div class="inner">
+    <h2 class="poster">Privacy</h2>
+    <p>Last updated November 2026.</p>
+    <h3>What we collect</h3>
+    <p>This website does not ask for your name, email or payment details. Your language choice may be saved in your own browser so the site remembers it. When you place a pickup order we receive your name, phone number and the items ordered, and use them only to prepare and hand over your order.</p>
+    <h3>Third parties</h3>
+    <p>Fonts load from Google Fonts. Links to Instagram and Google Maps take you to those services, which have their own privacy policies.</p>
+    <h3>Analytics</h3>
+    <p>If we add visitor analytics in the future, this page will be updated to say what is measured and why.</p>
+    <h3>Contact</h3>
+    <p>Privacy questions: message us on Instagram at @mangomix_.</p>
+  </div>
+</section>
+
+<div class="toast" id="toast" role="status"></div>
+
+<button class="cartpill" type="button" id="cartPill" aria-controls="drawer" aria-expanded="false"><span data-i18n="yourOrder">Your order</span> <b id="cartCount">0</b> <span id="cartTotal"></span></button>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer selva" id="drawer" aria-label="Your order" aria-hidden="true">
+  <div class="dhead">
+    <span class="label" data-i18n="demoTag">Demo order, no payment taken</span>
+    <button class="chip" type="button" id="closeDrawer"><span data-i18n="close">Close</span></button>
+  </div>
+  <div id="dBody"></div>
+</aside>
+
+<script src="js/app.js"></script>
+</body>
+</html>
