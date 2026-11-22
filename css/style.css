@@ -70,7 +70,7 @@
   .fav.flip{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
   .fav.flip .txt{order:2;text-align:right}
   .fav.flip .txt p{margin-left:auto}
-  .fav .big{font-size:clamp(80px,11vw,190px)}
+  .fav .big{font-size:clamp(72px,9.5vw,170px)}
   .fav .txt p{margin-top:3vh;max-width:36ch;font-size:20px}
   .fav .txt .label{display:block;margin-bottom:2.5vh;opacity:.75}
   .fav img{width:100%;max-width:440px;justify-self:center;transform:rotate(var(--r,4deg))}

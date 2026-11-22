@@ -1,4 +1,4 @@
-const IMG = {mango:"assets/img/mango-cup.webp",fresas:"assets/img/fresas-con-crema.webp",acai:"assets/img/acai.webp",pina:"assets/img/pina-loca.webp",sandia:"assets/img/sandia-con-mango.webp",shake:"assets/img/chocolate-shake.webp"};
+const IMG = {mango:"assets/img/mango-cup.webp",fresas:"assets/img/fresas-con-crema.webp",acai:"assets/img/acai.webp",pina:"assets/img/pina-loca.webp",sandia:"assets/img/sandia-con-mango.webp",fresashake:"assets/img/strawberry-milkshake.webp",shake:"assets/img/chocolate-shake.webp"};
 const T = {
   en:{skip:"Skip to menu",navMenu:"Menu",navCup:"Build a cup",navVisit:"Visit",heroP:"Colombian fruit bar since 2017. Cut to order, piled high, Tampa Bay.",heroCta:"Find us",favsH:"Los favoritos",favsL:"What everyone posts about",alsoH:"And also",
     founderP:"The Colombian fruit stand, brought to Tampa. Fruit cut in front of you, cups filled until they overflow, the way it is done back home.",founderCap:"The founder, fruit in hand.",
@@ -25,7 +25,8 @@ const FAVS = [
   {id:"mangocup",p:9,img:"mango",r:"-5deg",en:["Mango cup","A whole cup of mango, cut into long ribbons. Nothing added, nothing needed.","Fresh fruit"],es:["Vaso de mango","Un vaso entero de mango cortado en tiras largas. Nada más, no hace falta.","Fruta fresca"]},
   {id:"acai",p:12,img:"acai",r:"5deg",en:["Açaí","Thick açaí with granola, banana, mango and strawberry on top.","Cold"],es:["Açaí","Açaí espeso con granola, banano, mango y fresa encima.","Frío"]},
   {id:"sandia",p:9,img:"sandia",r:"-4deg",en:["Sandía con mango","Icy watermelon with fruit inside, crowned with ribbons of green mango.","Refreshing"],es:["Sandía con mango","Sandía helada con fruta adentro, coronada con tiras de mango verde.","Refrescante"]},
-  {id:"choco",p:9,img:"shake",r:"6deg",en:["Chocolate shake","Thick chocolate shake, whipped cream, cocoa and a waffle on top.","Sweet"],es:["Batido de chocolate","Batido espeso de chocolate, crema batida, cacao y un waffle encima.","Dulce"]}
+  {id:"choco",p:9,img:"shake",r:"6deg",en:["Chocolate shake","Thick chocolate shake, whipped cream, cocoa and a waffle on top.","Sweet"],es:["Batido de chocolate","Batido espeso de chocolate, crema batida, cacao y un waffle encima.","Dulce"]},
+  {id:"fresashake",p:9,img:"fresashake",r:"-5deg",en:["Strawberry milkshake","Strawberry shake swirled with strawberry syrup, piled with whipped cream and a chocolate on top.","Sweet"],es:["Malteada de fresa","Batido de fresa con sirope de fresa, mucha crema batida y un chocolate encima.","Dulce"]}
 ];
 const EXTRA = [
   {id:"fresas",p:10,en:["Fresas con crema"],es:["Fresas con crema"]},

@@ -37,13 +37,16 @@ assets/source/          bigger source images, for re-cutting or re-exporting
 ## Photos
 
 - From the Mangomix Instagram. Mango cup, açaí, sandía con mango and chocolate shake are full-size originals.
-- Fresas con crema, piña loca and the founder photo only exist as small video covers, so they were
-  AI-upscaled (`*-ai-upscaled.jpg`). The founder photo is still a bit soft: replace when the owner sends originals.
+- Strawberry milkshake came from a 1080px promo graphic and was cut out and AI-upscaled.
+- Fresas con crema and piña loca only exist as small video covers, so they were AI-upscaled
+  (`*-ai-upscaled.jpg`). The founder photo (612px) was also AI-upscaled; replace when the owner sends originals.
 - Fresas con crema and piña loca came from Halloween posts. Backgrounds were removed.
 - Stickers have a cream outline baked into the image. To make new ones: remove background, add a
   cream (#FFF4D6) outline about 24px wide, export as .webp around 1100px tall.
 
 ## Facts used on the site
+
+- They already sell on DoorDash and Uber Eats (shown on their own promo graphics). Pitch angle: direct pickup orders on their own site, no app commission.
 
 - Two locations: 6804 N Armenia Ave, Tampa FL and KRATE at The Grove, 5903 Goldview Pkwy, Wesley Chapel FL.
 - "Since 2017": printed on their cups ("EST. 2017").
